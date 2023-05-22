@@ -1,0 +1,6 @@
+C:\Users\Pia\RiderProjects\Catalogo\ConexionDB\bin\Debug\ConexionDB.dll
+C:\Users\Pia\RiderProjects\Catalogo\ConexionDB\bin\Debug\ConexionDB.pdb
+C:\Users\Pia\RiderProjects\Catalogo\ConexionDB\obj\Debug\ConexionDB.csproj.AssemblyReference.cache
+C:\Users\Pia\RiderProjects\Catalogo\ConexionDB\obj\Debug\ConexionDB.csproj.CoreCompileInputs.cache
+C:\Users\Pia\RiderProjects\Catalogo\ConexionDB\obj\Debug\ConexionDB.dll
+C:\Users\Pia\RiderProjects\Catalogo\ConexionDB\obj\Debug\ConexionDB.pdb
