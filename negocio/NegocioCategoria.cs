@@ -23,8 +23,8 @@ namespace negocio
                 while (db.Lector.Read())
                 {
                     Categoria aux = new Categoria();
-                    aux.Id = (int)db.Lector["Id"];
-                    aux.Descripcion = (string)db.Lector["Descripcion"];
+                    aux.Id = db.Lector.GetInt32(0);
+                    aux.Descripcion = db.Lector.GetString(1);
 
                     categorias.Add(aux);
                 }
