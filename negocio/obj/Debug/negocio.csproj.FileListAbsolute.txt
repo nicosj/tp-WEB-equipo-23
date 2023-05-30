@@ -20,3 +20,14 @@ C:\Users\Pia\RiderProjects\CarritoWeb\negocio\obj\Debug\negocio.csproj.CoreCompi
 C:\Users\Pia\RiderProjects\CarritoWeb\negocio\obj\Debug\negocio.csproj.CopyComplete
 C:\Users\Pia\RiderProjects\CarritoWeb\negocio\obj\Debug\negocio.dll
 C:\Users\Pia\RiderProjects\CarritoWeb\negocio\obj\Debug\negocio.pdb
+D:\Github\negocio\bin\Debug\negocio.dll
+D:\Github\negocio\bin\Debug\negocio.pdb
+D:\Github\negocio\bin\Debug\ConexionDB.dll
+D:\Github\negocio\bin\Debug\Dominio.dll
+D:\Github\negocio\bin\Debug\ConexionDB.pdb
+D:\Github\negocio\bin\Debug\Dominio.pdb
+D:\Github\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+D:\Github\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+D:\Github\negocio\obj\Debug\negocio.csproj.CopyComplete
+D:\Github\negocio\obj\Debug\negocio.dll
+D:\Github\negocio\obj\Debug\negocio.pdb
