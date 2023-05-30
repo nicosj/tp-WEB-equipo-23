@@ -22,3 +22,6 @@ D:\Github\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 D:\Github\Dominio\obj\Debug\Dominio.dll
 D:\Github\Dominio\obj\Debug\Dominio.pdb
 >>>>>>> b62a5fc164e542f0fb4dabf86082cb72b4786338
+D:\Github\Dominio\bin\Debug\ConexionDB.dll
+D:\Github\Dominio\bin\Debug\ConexionDB.pdb
+D:\Github\Dominio\obj\Debug\Dominio.csproj.CopyComplete

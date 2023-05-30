@@ -154,3 +154,9 @@ C:\Users\Pia\RiderProjects\CarritoWeb\WebCarrito\obj\Debug\WebCarrito.csproj.Cor
 C:\Users\Pia\RiderProjects\CarritoWeb\WebCarrito\obj\Debug\WebCarrito.csproj.CopyComplete
 C:\Users\Pia\RiderProjects\CarritoWeb\WebCarrito\obj\Debug\WebCarrito.dll
 C:\Users\Pia\RiderProjects\CarritoWeb\WebCarrito\obj\Debug\WebCarrito.pdb
+D:\Github\WebCarrito\bin\negocio.dll
+D:\Github\WebCarrito\bin\Dominio.dll
+D:\Github\WebCarrito\bin\ConexionDB.dll
+D:\Github\WebCarrito\bin\negocio.pdb
+D:\Github\WebCarrito\bin\Dominio.pdb
+D:\Github\WebCarrito\bin\ConexionDB.pdb
