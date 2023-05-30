@@ -31,3 +31,14 @@ D:\Github\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
 D:\Github\negocio\obj\Debug\negocio.csproj.CopyComplete
 D:\Github\negocio\obj\Debug\negocio.dll
 D:\Github\negocio\obj\Debug\negocio.pdb
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\negocio\bin\Debug\negocio.dll
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\negocio\bin\Debug\negocio.pdb
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\negocio\bin\Debug\ConexionDB.dll
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\negocio\bin\Debug\Dominio.dll
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\negocio\bin\Debug\ConexionDB.pdb
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\negocio\bin\Debug\Dominio.pdb
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\negocio\obj\Debug\negocio.csproj.CopyComplete
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\negocio\obj\Debug\negocio.dll
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\negocio\obj\Debug\negocio.pdb

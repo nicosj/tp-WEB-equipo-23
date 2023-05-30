@@ -16,3 +16,9 @@ D:\Github\ConexionDB\obj\Debug\ConexionDB.csproj.AssemblyReference.cache
 D:\Github\ConexionDB\obj\Debug\ConexionDB.csproj.CoreCompileInputs.cache
 D:\Github\ConexionDB\obj\Debug\ConexionDB.dll
 D:\Github\ConexionDB\obj\Debug\ConexionDB.pdb
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\ConexionDB\bin\Debug\ConexionDB.dll
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\ConexionDB\bin\Debug\ConexionDB.pdb
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\ConexionDB\obj\Debug\ConexionDB.csproj.AssemblyReference.cache
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\ConexionDB\obj\Debug\ConexionDB.csproj.CoreCompileInputs.cache
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\ConexionDB\obj\Debug\ConexionDB.dll
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\ConexionDB\obj\Debug\ConexionDB.pdb
