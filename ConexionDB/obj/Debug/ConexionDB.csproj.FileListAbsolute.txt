@@ -10,3 +10,9 @@ C:\Users\Pia\RiderProjects\CarritoWeb\ConexionDB\obj\Debug\ConexionDB.csproj.Ass
 C:\Users\Pia\RiderProjects\CarritoWeb\ConexionDB\obj\Debug\ConexionDB.csproj.CoreCompileInputs.cache
 C:\Users\Pia\RiderProjects\CarritoWeb\ConexionDB\obj\Debug\ConexionDB.dll
 C:\Users\Pia\RiderProjects\CarritoWeb\ConexionDB\obj\Debug\ConexionDB.pdb
+D:\Github\ConexionDB\bin\Debug\ConexionDB.dll
+D:\Github\ConexionDB\bin\Debug\ConexionDB.pdb
+D:\Github\ConexionDB\obj\Debug\ConexionDB.csproj.AssemblyReference.cache
+D:\Github\ConexionDB\obj\Debug\ConexionDB.csproj.CoreCompileInputs.cache
+D:\Github\ConexionDB\obj\Debug\ConexionDB.dll
+D:\Github\ConexionDB\obj\Debug\ConexionDB.pdb

@@ -44,6 +44,12 @@
         <Compile Include="Marca.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\ConexionDB\ConexionDB.csproj">
+        <Project>{559432b2-c9dc-4cec-9090-cf75629d3342}</Project>
+        <Name>ConexionDB</Name>
+      </ProjectReference>
+    </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
          Other similar extension points exist, see Microsoft.Common.targets.
