@@ -18,8 +18,10 @@
         <% 
         foreach (Dominio.Imagen imagen in listaImagenes)
         {
-            if(articulo.Id == imagen.IdArticulo){
-
+            
+            if( imagen.IdArticulo.Equals(articulo.Id))
+            {
+                
             %>
                     <img src="<% = imagen.ImagenUrl %>" class="card-img-top" alt="...">
           
