@@ -10,18 +10,24 @@ C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.csproj.AssemblyR
 C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.dll
 C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.pdb
-
 C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\bin\Debug\ConexionDB.dll
 C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\bin\Debug\ConexionDB.pdb
 C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.csproj.CopyComplete
-
 D:\Github\Dominio\bin\Debug\Dominio.dll
 D:\Github\Dominio\bin\Debug\Dominio.pdb
 D:\Github\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
 D:\Github\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 D:\Github\Dominio\obj\Debug\Dominio.dll
 D:\Github\Dominio\obj\Debug\Dominio.pdb
-
 D:\Github\Dominio\bin\Debug\ConexionDB.dll
 D:\Github\Dominio\bin\Debug\ConexionDB.pdb
 D:\Github\Dominio\obj\Debug\Dominio.csproj.CopyComplete
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\Dominio\bin\Debug\Dominio.dll
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\Dominio\bin\Debug\Dominio.pdb
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\Dominio\bin\Debug\ConexionDB.dll
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\Dominio\bin\Debug\ConexionDB.pdb
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\Dominio\obj\Debug\Dominio.csproj.CopyComplete
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\Dominio\obj\Debug\Dominio.dll
+D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\Dominio\obj\Debug\Dominio.pdb
