@@ -11,21 +11,7 @@ namespace WebCarrito
 {
 
 
-    public partial class _Default
-    {
-
-        /// <summary>
-        /// Master property.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated property.
-        /// </remarks>
-        public new WebCarrito.SiteMaster Master
-        {
-            get
-            {
-                return ((WebCarrito.SiteMaster)(base.Master));
-            }
-        }
-    }
+	public partial class _Default
+	{
+	}
 }
