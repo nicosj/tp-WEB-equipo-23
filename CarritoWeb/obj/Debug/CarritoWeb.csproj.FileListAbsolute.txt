@@ -74,3 +74,9 @@ C:\Users\Pia\RiderProjects\CarritoWeb\CarritoWeb\obj\Debug\CarritoWeb.csproj.Cor
 C:\Users\Pia\RiderProjects\CarritoWeb\CarritoWeb\obj\Debug\CarritoWeb.csproj.CopyComplete
 C:\Users\Pia\RiderProjects\CarritoWeb\CarritoWeb\obj\Debug\CarritoWeb.dll
 C:\Users\Pia\RiderProjects\CarritoWeb\CarritoWeb\obj\Debug\CarritoWeb.pdb
+C:\Users\Pia\RiderProjects\CarritoWeb\CarritoWeb\bin\negocio.dll
+C:\Users\Pia\RiderProjects\CarritoWeb\CarritoWeb\bin\Dominio.dll
+C:\Users\Pia\RiderProjects\CarritoWeb\CarritoWeb\bin\ConexionDB.dll
+C:\Users\Pia\RiderProjects\CarritoWeb\CarritoWeb\bin\negocio.pdb
+C:\Users\Pia\RiderProjects\CarritoWeb\CarritoWeb\bin\Dominio.pdb
+C:\Users\Pia\RiderProjects\CarritoWeb\CarritoWeb\bin\ConexionDB.pdb

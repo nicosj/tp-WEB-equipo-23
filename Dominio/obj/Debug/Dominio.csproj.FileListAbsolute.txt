@@ -10,3 +10,6 @@ C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.csproj.AssemblyR
 C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.dll
 C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\bin\Debug\ConexionDB.dll
+C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\bin\Debug\ConexionDB.pdb
+C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.csproj.CopyComplete

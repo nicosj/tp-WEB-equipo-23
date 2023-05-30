@@ -10,6 +10,8 @@ namespace CarritoWeb.Controllers
     {
         public ActionResult Index()
         {
+            
+            
             return View();
         }
 
