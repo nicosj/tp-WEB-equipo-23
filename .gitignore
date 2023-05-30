@@ -3,3 +3,5 @@
 .vscode
 ./packages/
 /packages
+./Dominio/obj/*
+/Dominio/obj
