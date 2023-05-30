@@ -33,6 +33,9 @@
       <div class="card-body">
         <h5 class="card-title"><%:articulo.Nombre %></h5>
         <p class="card-text"><%:articulo.Descripcion %></p>
+          <a href="DetallePokemon.aspx?id=<% = articulo.Id %>" class="btn btn-primary">Ver Detalle</a>
+          <a class="btn btn-primary" href="carrito.aspx?id=<% = articulo.Id %>&e=t"><i class="fas fa-shopping-cart"></i></a>
+          
       </div>
     </div>
   </div>
