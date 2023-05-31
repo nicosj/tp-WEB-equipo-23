@@ -82,13 +82,13 @@
 									{
 										contador++;%>
 										<div class="carousel-item <%= bandera==1 ? "active" : "" %>">
-											<img src="<% = imagen.ImagenUrl  %>" class="d-block w-100" alt="...">
+											<img src="<% = imagen.ImagenUrl  %>" class="img-fluid" alt="...">
 										</div>
 									<%}
 								if (contador == 0)
 								{%>
 									<div class="carousel-item active">
-										<img src="https://img.memegenerator.net/instances/81964216.jpg" class="d-block w-100" alt="...">
+										<img src="https://img.memegenerator.net/instances/81964216.jpg" class="img-fluid" alt="...">
 									</div>
 								<%}
 								}%>
