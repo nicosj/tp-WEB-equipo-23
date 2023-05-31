@@ -60,5 +60,6 @@ namespace WebCarrito
             FiltroAvanzado = chkAvanzado.Checked;
             txtFiltro.Enabled = !FiltroAvanzado;
         }
+        
     }
 }

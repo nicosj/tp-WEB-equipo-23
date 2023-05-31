@@ -8,6 +8,7 @@ namespace negocio
 {
 	public class NegocioArticulo
 	{
+		
 
 		public List<Articulo> listarConSP()
 		{
@@ -128,6 +129,34 @@ namespace negocio
 		}
 
 
+		public Articulo buscarXId(int idSeleccionado)
+		{
+			try
+			{
+				DB datos = new DB();
+				datos.setearConsulta("SELECT Id, Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio FROM ARTICULOS where id= @id");
+				datos.setearParametro("@id", idSeleccionado);
+				datos.ejecutarLectura();
+				Articulo aux = new Articulo();
+				while (datos.Lector.Read())
+				{
+					aux.Id = datos.Lector.GetInt32(0);
+					aux.Codigo = datos.Lector.GetString(1);
+					aux.Nombre = datos.Lector.GetString(2);
+					aux.Descripcion = datos.Lector.GetString(3);
+					aux.IdMarca = (int)datos.Lector["IdMarca"];
+					aux.IdCategoria = (int)datos.Lector["IdCategoria"];
+					aux.Precio = (decimal)datos.Lector["Precio"];
+				}
+				datos.cerrarConexion();
+				return aux;
+			}
+			catch (Exception ex)
+			{
 
+				throw ex;
+			}
+
+		}
 	}
 }
