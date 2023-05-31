@@ -6,106 +6,163 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-    internal class CarritoCompra
+
+    [Serializable]
+    public class CarritoItem
     {
+        private int _IDproducto;
+        private string _NombreProducto;
+        private string _URLimagen;
+        private int _Cantidad;
+        private double _Precio;
+        private double _subTotal;
 
-        #region Properties
+        public Articulo articulo { get; set; }
 
-        public List<CartItem> Items { get; private set; }
 
-        #endregion
-        #region Singleton Implementation
-        // Readonly properties can only be set in initialization or in a constructor 
-        public static readonly CarritoCompra Instance;
-        // The static constructor is called as soon as the class is loaded into memory 
-        static CarritoCompra()
+        public CarritoItem()
         {
-            // If the cart is not in the session, create one and put it there 
-            // Otherwise, get it from the session 
-            if (HttpContext.Current.Session["ASPNETCarritoCompra"] == null)
+        }
+        public CarritoItem(int IDproducto, string NombreProducto,
+              string ImagenUrl, int Cantidad, double Precio)
+        {
+            _IDproducto = IDproducto;
+            _NombreProducto = NombreProducto;
+            _URLimagen = ImagenUrl;
+            _Cantidad = Cantidad;
+            _Precio = Precio;
+            _subTotal = Cantidad * Precio;
+        }
+        public int IDproducto
+        {
+            get
             {
-                Instance = new CarritoCompra();
-                Instance.Items = new List<CartItem>();
-                HttpContext.Current.Session["ASPNETCarritoCompra"] = Instance;
+                return _IDproducto;
             }
-            else
+            set
             {
-                Instance = (CarritoCompra)HttpContext.Current.Session["ASPNETCarritoCompra"];
+                _IDproducto = value;
             }
         }
-        // A protected constructor ensures that an object can't be created from outside 
-        protected CarritoCompra() { }
-        #endregion
-        #region Item Modification Methods
-        /** 
-    * AddItem() - Adds an item to the shopping 
-*/
-        public void AgregarItem(int productId)
+        public string NombreProducto
         {
-            // Create a new item to add to the cart 
-            CartItem NuevoItem = new CartItem(productId);
-            // If this item already exists in our list of items, increase the quantity 
-            // Otherwise, add the new item to the list 
-            if (Items.Contains(NuevoItem))
-            {
-                foreach (CartItem item in Items)
-                {
-                    if (item.Equals(NuevoItem))
-                    {
-                        item.CantItems++;
-                        return;
-                    }
-                }
-            }
-            else
-            {
-                NuevoItem.Quantity = 1;
-                Items.Add(NuevoItem);
-            }
+            get { return NombreProducto; }
+            set { NombreProducto = value; }
         }
-        /** 
-    * SetItemQuantity() - Changes the quantity of an item in the cart 
-*/
-        public void SetItemQuantity(int productId, int quantity)
+        public string ImagenURL
         {
-            // If we are setting the quantity to 0, remove the item entirely 
-            if (quantity == 0)
-            {
-                RemoveItem(productId);
-                return;
-            }
-            // Find the item and update the quantity 
-            CartItem updatedItem = new CartItem(productId);
-            foreach (CartItem item in Items)
-            {
-                if (item.Equals(updatedItem))
-                {
-                    item.Quantity = quantity;
-                    return;
-                }
-            }
+            get { return _URLimagen; }
+            set { _URLimagen = value; }
         }
-        /** 
-    * RemoveItem() - Removes an item from the shopping cart 
-*/
-        public void RemoveItem(int productId)
+
+        public int Cantidad
         {
-            CartItem removedItem = new CartItem(productId);
-            Items.Remove(removedItem);
+            get { return _Cantidad; }
+            set { _Cantidad = value; }
         }
-        #endregion
-        #region Reporting Methods
-        /** 
-    * GetSubTotal() - returns the total price of all of the items 
-    * before tax, shipping, etc. 
-*/
-        public decimal GetSubTotal()
+
+        public double Precio
         {
-            decimal subTotal = 0;
-            foreach (CartItem item in Items)
-                subTotal += item.TotalPrice;
-            return subTotal;
+            get { return _Precio; }
+            set { _Precio = value; }
         }
-        #endregion
+
+        public double SubTotal
+        {
+            get { return _Cantidad * _Precio; }
+
+        }
     }
+    [Serializable]
+    public class Carrito
+    {
+        private DateTime _FechaCreacion;
+        private DateTime _UltActualizacion;
+        private List<CarritoItem> _items;
+
+        public Carrito()
+        {
+            if (this._items == null)
+            {
+                this._items = new List<CarritoItem>();
+                this._FechaCreacion = DateTime.Now;
+            }
+        }
+
+        public List<CarritoItem> Items
+        {
+            get { return _items; }
+            set { _items = value; }
+        }
+
+        public void AgregarItem(int IDproducto, double Precio,
+        int Cantidad, string NombreProducto, string ImagenURL)
+        {
+            int ItemIndex = IndicedeIDitem(IDproducto);
+            if (ItemIndex == -1)
+            {
+                CarritoItem NewItem = new CarritoItem();
+                NewItem.IDproducto = IDproducto;
+                NewItem.Cantidad = Cantidad;
+                NewItem.Precio = Precio;
+                NewItem.NombreProducto = NombreProducto;
+                NewItem.ImagenURL = ImagenURL;
+                _items.Add(NewItem);
+            }
+            else
+            {
+                _items[ItemIndex].Cantidad += 1;
+            }
+            _UltActualizacion = DateTime.Now;
+        }
+
+        public void ActualizarItem(int IDFila, int IDproducto,
+                         int Cantidad, double Precio)
+        {
+            CarritoItem Item = _items[IDFila];
+            Item.IDproducto = IDproducto;
+            Item.Cantidad = Cantidad;
+            Item.Precio = Precio;
+            _UltActualizacion = DateTime.Now;
+        }
+
+        public void BorrarItem(int rowID)
+        {
+            _items.RemoveAt(rowID);
+            _UltActualizacion = DateTime.Now;
+        }
+
+        private int IndicedeIDitem(int ProductID)
+        {
+            int index = 0;
+            foreach (CarritoItem item in _items)
+            {
+                if (item.IDproducto == ProductID)
+                {
+                    return index;
+                }
+                index += 1;
+            }
+            return -1;
+        }
+
+        public double Total
+        {
+            get
+            {
+                double t = 0;
+                if (_items == null)
+                {
+                    return 0;
+                }
+                foreach (CarritoItem Item in _items)
+                {
+                    t += Item.SubTotal;
+                }
+                return t;
+            }
+        }
+
+    }
+}
 }
