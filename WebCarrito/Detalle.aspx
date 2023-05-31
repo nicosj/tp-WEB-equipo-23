@@ -5,16 +5,20 @@
 
 	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 
-		<%
-			foreach (Dominio.Imagen imagen in listaImagen)
-			{	%>
+		<%//if (id_Seleccionado != null)
+			{
+				foreach (Dominio.Imagen imagen in listaImagen)
+				{%>
 
-			<div class="carousel-inner">
-				<div class="carousel-item active" data-bs-interval="1000">
-					<img src="<%:imagen.ImagenUrl %>" class="d-block w-100" alt="...">
-				</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active" data-bs-interval="1000">
+				<img src="<%:imagen.ImagenUrl %>" class="d-block w-100" alt="...">
 			</div>
-		<%	}	%>
+		</div>
+		<%	}
+			}	%>
+
+
 
 
 
@@ -28,5 +32,8 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
+
+	<br />
+	Regresar a la lista de productos: <a href="/Default.aspx">Regresar</a>
 
 </asp:Content>
