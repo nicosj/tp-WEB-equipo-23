@@ -16,15 +16,13 @@ namespace WebCarrito
     public partial class _Default : Page
     {
     
-
+        public Articulo articulo { get; set; }
         public List<Articulo> listaArticulos { get; set; }
         public List<Categoria> listaCategorias { get; set; }
         public List<Marca> listaMarcas { get; set; }
         public List<Imagen> listaImagenes { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            
 
                 FiltroAvanzado = false;
                 NegocioArticulo negocio = new NegocioArticulo();
@@ -60,6 +58,5 @@ namespace WebCarrito
             FiltroAvanzado = chkAvanzado.Checked;
             txtFiltro.Enabled = !FiltroAvanzado;
         }
-        
-    }
+	}
 }
