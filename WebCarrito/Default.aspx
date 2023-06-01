@@ -106,8 +106,9 @@
 					<div class="card-body">
 						<h5 class="card-title"><%:articulo.Nombre %></h5>
 						<p class="card-text"><%:articulo.Descripcion %></p>
+						<%--<asp:LinkButton runat="server" ID="btnCarrito" OnClick="btnAddCatrrito">+<i class="fas fa-shopping-cart"></i></asp:LinkButton></div>--%>
 						<a href="Detalle.aspx?id_seleccionado=<%=articulo.Id%>" class="btn btn-primary">Ver Detalle</a>
-						<a class="btn btn-primary" href="carrito.aspx?id=<% = articulo.Id %>&e=t"><i class="fas fa-shopping-cart"></i></a>
+						
 
 					</div>
 				</div>
@@ -115,4 +116,5 @@
 			<%  }  %>
 		</div>
 		</div>
+		
 </asp:Content>

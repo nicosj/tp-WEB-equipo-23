@@ -181,6 +181,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="VerCarrito.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -234,6 +235,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="VerCarrito.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>VerCarrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerCarrito.aspx.designer.cs">
+      <DependentUpon>VerCarrito.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

@@ -5,8 +5,10 @@ namespace Dominio
 {
     public class Articulo
     {
-    
+
         
+
+
         public int Id { get; set; }
         public String Codigo { get; set; }
         public String Nombre { get; set; }
@@ -18,5 +20,11 @@ namespace Dominio
         [DisplayName("Marca")]
         public int IdMarca { get; set; }
         public decimal Precio { get; set; }
+        public Articulo(){}
+        
+        public Articulo(int productId)
+        {
+            this.Id = productId;
+        }
     }
 }

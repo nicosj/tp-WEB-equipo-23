@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Detalle.aspx.cs" Inherits="WebCarrito.Detalle" %>
+﻿<%@ Page Title="loco" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Detalle.aspx.cs" Inherits="WebCarrito.Detalle" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 	<%--TODO: Meter Descripcion, precio, nombre, marcar, etc--%>
