@@ -62,9 +62,9 @@
 			<% foreach (Dominio.Articulo articulo in listaArticulos)
 				{%>
 
-					<div class="col">
-						<div class="card">
-							<div id="carouselExampleSlidesOnly" class="carousel" data-bs-ride="carousel">
+			<div class="col">
+				<div class="card">
+					<div id="carouselExampleSlidesOnly" class="carousel" data-bs-ride="carousel">
 						<div class="carousel-inner">
 
 							<%	var contador = 0;
@@ -81,16 +81,16 @@
 									if (primer_id == imagen.IdArticulo)
 									{
 										contador++;%>
-										<div class="carousel-item <%= bandera==1 ? "active" : "" %>">
-											<img src="<% = imagen.ImagenUrl  %>" class="img-fluid h-100" alt="...">
-										</div>
-									<%}
+							<div class="carousel-item <%= bandera==1 ? "active" : "" %>">
+								<img src="<% = imagen.ImagenUrl  %>" class="img-fluid h-100" alt="...">
+							</div>
+							<%}
 								if (contador == 0)
 								{%>
-									<div class="carousel-item active">
-										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTBsA3gZlk5cyzhql5sP8ybqKN9UU0fXQ_gw&usqp=CAU" class="img-fluid" alt="...">
-									</div>
-								<%}
+							<div class="carousel-item active">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTBsA3gZlk5cyzhql5sP8ybqKN9UU0fXQ_gw&usqp=CAU" class="img-fluid" alt="...">
+							</div>
+							<%}
 								}%>
 						</div>
 						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -107,7 +107,12 @@
 						<h5 class="card-title"><%:articulo.Nombre %></h5>
 						<p class="card-text"><%:articulo.Descripcion %></p>
 						<p class="card-text">$<%:((float)articulo.Precio) %></p>
-						<a href="Detalle.aspx?id_seleccionado=<%=articulo.Id%>" class="btn btn-primary">Ver Detalle</a>
+						<%--<a href="Detalle.aspx?id_seleccionado=<%=articulo.Id%>" class="btn btn-primary">Ver Detalle</a>--%>
+
+						<a href="DetalleProducto.aspx?id_seleccionado=<%=articulo.Id%>" class="btn btn-primary">Ver Detalle2</a>
+
+						<%--<asp:Button ID="btnGoDetails" runat="server" OnClick="btnGoDetails_Click"	 Text="DetailsNuevo" />--%>
+
 						<a class="btn btn-primary" href="carrito.aspx?id=<% = articulo.Id %>&e=t"><i class="fas fa-shopping-cart"></i></a>
 
 					</div>
@@ -115,5 +120,5 @@
 			</div>
 			<%  }  %>
 		</div>
-		</div>
+	</div>
 </asp:Content>

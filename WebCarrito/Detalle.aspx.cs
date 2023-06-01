@@ -18,21 +18,12 @@ namespace WebCarrito
 		{
 			/*int id_Seleccionado = Int32.Parse(Request.QueryString["id_seleccionado"]);*/
 			alt = Request.QueryString["id_seleccionado"].ToString();
-			
-			
 
-			
-			
-			
-			
 
 			NegocioArticulo negocio = new NegocioArticulo();
 			NegocioImagen Imagen = new NegocioImagen();
 			listaImagen = Imagen.listar();
 			/*articulo = negocio.buscarXId(id_Seleccionado);*/
-			
-			
-
 
 
 		}

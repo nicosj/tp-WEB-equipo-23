@@ -1,33 +1,33 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Detalle.aspx.cs" Inherits="WebCarrito.Detalle" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-	<%--TODO: Meter Descripcion, precio, nombre, marcar, etc--%>
+	<%--TODO: Meter Descripcion, precio, nombre, marca, etc--%>
 
 	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
-		<%
-			try
-			{
-				if (Int32.Parse(alt) != 999)
+			<%
+				try
 				{
-					foreach (Dominio.Imagen imagen in listaImagen)
+					if (Int32.Parse(alt) != 999)
 					{
-						if (Int32.Parse(alt) == imagen.Id)
-
+						foreach (Dominio.Imagen imagen in listaImagen)
 						{
-		%>
+							if (Int32.Parse(alt) == imagen.Id)
 
-		
+							{
+			%>
+
+
 			<div class="carousel-item active" data-bs-interval="1000">
 				<img src="<%: imagen.ImagenUrl %>" class="d-block w-100" alt="...">
 			</div>
-		
-		<%
-						}
+
+			<%
 					}
+				}
 
 
-		%>
+			%>
 
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="false"></span>
@@ -42,26 +42,24 @@
 
 	<br />
 	<%
-				}
-				else
-				{
+		}
+		else
+		{
 
 	%>
-			<div class="alert alert-danger" role="alert">
-				<h1> se encontraron imagenes</h1>
-				<%--cdn nout found img etiqueta--%>
-				<img src="https://img.memegenerator.net/instances/81964216.jpg" alt="">
-				
-
-			</div>
-		<%
-				}
+	<div class="alert alert-danger" role="alert">
+		<h1>se encontraron imagenes</h1>
+		<%--cdn nout found img etiqueta--%>
+		<img src="https://img.memegenerator.net/instances/81964216.jpg" alt="">
+	</div>
+	<%
 			}
-			catch (Exception e)
-			{
-				e.ToString();
-			}
-		%>
+		}
+		catch (Exception e)
+		{
+			e.ToString();
+		}
+	%>
 	Regresar a la lista de productos: <a href="/Default.aspx">Regresar</a>
 
 </asp:Content>

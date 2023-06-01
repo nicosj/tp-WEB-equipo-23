@@ -11,7 +11,7 @@ namespace WebCarrito
 {
 
 
-	public partial class Detalle
+	public partial class DetalleProducto
 	{
 	}
 }
