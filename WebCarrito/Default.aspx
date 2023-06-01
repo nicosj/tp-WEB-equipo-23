@@ -57,14 +57,14 @@
 
 		<% }%>
 
-		<div class="row row-cols-1 row-cols-md-3 g-4">
+		<div class="row row-cols-1 row-cols-md-3 g-4 h-100">
 			<%var primer_id = 0;%>
 			<% foreach (Dominio.Articulo articulo in listaArticulos)
 				{%>
 
 					<div class="col">
 						<div class="card">
-							<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+							<div id="carouselExampleSlidesOnly" class="carousel" data-bs-ride="carousel">
 						<div class="carousel-inner">
 
 							<%	var contador = 0;
@@ -82,13 +82,13 @@
 									{
 										contador++;%>
 										<div class="carousel-item <%= bandera==1 ? "active" : "" %>">
-											<img src="<% = imagen.ImagenUrl  %>" class="img-fluid" alt="...">
+											<img src="<% = imagen.ImagenUrl  %>" class="img-fluid h-100" alt="...">
 										</div>
 									<%}
 								if (contador == 0)
 								{%>
 									<div class="carousel-item active">
-										<img src="https://img.memegenerator.net/instances/81964216.jpg" class="img-fluid" alt="...">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTBsA3gZlk5cyzhql5sP8ybqKN9UU0fXQ_gw&usqp=CAU" class="img-fluid" alt="...">
 									</div>
 								<%}
 								}%>
@@ -106,7 +106,11 @@
 					<div class="card-body">
 						<h5 class="card-title"><%:articulo.Nombre %></h5>
 						<p class="card-text"><%:articulo.Descripcion %></p>
+
 						<%--<asp:LinkButton runat="server" ID="btnCarrito" OnClick="btnAddCatrrito">+<i class="fas fa-shopping-cart"></i></asp:LinkButton></div>--%>
+
+						<p class="card-text">$<%:((float)articulo.Precio) %></p>
+
 						<a href="Detalle.aspx?id_seleccionado=<%=articulo.Id%>" class="btn btn-primary">Ver Detalle</a>
 						
 
