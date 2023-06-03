@@ -17,9 +17,9 @@
 							if (Int32.Parse(alt) == imagen.IdArticulo && primeraImagen==false)
 							{%>
 								<div class="col-md-4">
-								<img src="<% =imagen.ImagenUrl %>" class="img-fluid rounded-start" alt="...">
+								<img onerror="this.src='https://image.spreadshirtmedia.net/image-server/v1/compositions/T6A1PA5835PT17X29Y62D162120215W24929H23114/views/1,width=550,height=550,appearanceId=1,backgroundColor=FFFFFF,noPt=true/dead-link-shirt-mens-t-shirt.jpg'" src="<% =imagen.ImagenUrl %>" class="img-fluid rounded-start" alt="...">
 								<%--TODO: Como hacer para que no me muestre "True" en la imagen??--%>
-								<%:(primeraImagen = true) %>
+								<%primeraImagen = true;%>
 								</div>
 			<%
 							}

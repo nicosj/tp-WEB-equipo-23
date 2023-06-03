@@ -95,13 +95,13 @@
 								}
 							</style>
 							<div class="carousel-item <%= bandera==1 ? "active" : "" %>" data-bs-interval="10000">
-								<img src="<% = imagen.ImagenUrl  %>" class="img-fluid h-100" alt="Link roto">
+								<img onerror="this.src='https://image.spreadshirtmedia.net/image-server/v1/compositions/T6A1PA5835PT17X29Y62D162120215W24929H23114/views/1,width=550,height=550,appearanceId=1,backgroundColor=FFFFFF,noPt=true/dead-link-shirt-mens-t-shirt.jpg'" src="<% = imagen.ImagenUrl  %>" class="img-fluid h-100" alt="Link roto">
 							</div>
 							<%}
 								if (contador == 0)
 								{%>
 							<div class="carousel-item active" data-bs-interval="10000">
-								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTBsA3gZlk5cyzhql5sP8ybqKN9UU0fXQ_gw&usqp=CAU" class="img-fluid" alt="...">
+								<img onerror="this.src='https://image.spreadshirtmedia.net/image-server/v1/compositions/T6A1PA5835PT17X29Y62D162120215W24929H23114/views/1,width=550,height=550,appearanceId=1,backgroundColor=FFFFFF,noPt=true/dead-link-shirt-mens-t-shirt.jpg'" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTBsA3gZlk5cyzhql5sP8ybqKN9UU0fXQ_gw&usqp=CAU" class="img-fluid" alt="...">
 							</div>
 							<%}
 								}%>
