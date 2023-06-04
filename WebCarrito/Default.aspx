@@ -106,8 +106,8 @@
 						
 					</div>
 
-					<div class="card-header bg-white ">
-						<h5 class=" card-title  bg-secondary text-warning "><%:articulo.Nombre %></h5>
+					<div class="card-header bg-white border-top border-warning border-2 ">
+						<h5 class=" card-title  bg-secondary text-warning p-2"><%:articulo.Nombre %></h5>
 						<p class="card-text "><%:articulo.Descripcion %></p>
 
 						<%--<asp:LinkButton runat="server" ID="btnCarrito" OnClick="btnAddCatrrito">+<i class="fas fa-shopping-cart"></i></asp:LinkButton></div>--%>
