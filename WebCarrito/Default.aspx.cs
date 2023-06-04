@@ -67,7 +67,7 @@ namespace WebCarrito
                 listaCategorias = negocioCategoria.listar();
                 foreach (Dominio.Categoria categoria in listaCategorias)
                 {
-                    ddlCriterioo.Items.Add(categoria.Descripcion);
+                    ddlCriterioo.Items.Add(categoria.Descripcion.ToString());
 									}
                 
             }
@@ -79,10 +79,51 @@ namespace WebCarrito
                 listaMarcas = negocioMarca.listar();
                 foreach (Dominio.Marca marca in listaMarcas)
                     {
-                    ddlCriterioo.Items.Add(marca.Descripcion);
+                    ddlCriterioo.Items.Add(marca.Descripcion.ToString());
                 }
             }
             
+            }
+        }
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ddlCampoo.SelectedItem.ToString() == "Marca")
+                {
+                    NegocioMarca negocioMarca = new NegocioMarca();
+                    listaMarcas = negocioMarca.listar();
+                    foreach (Dominio.Marca marca in listaMarcas)
+                    {
+                        if (ddlCriterioo.SelectedItem.ToString() == marca.Descripcion)
+                        {
+                            List<Articulo> lista = (List<Articulo>)Session["listaArticulos"];
+                            List<Articulo> listaFiltrada = lista.FindAll(x => x.IdMarca == marca.Id);
+                            listaArticulos = listaFiltrada;
+                        }
+                    }
+                }
+                else
+                {
+                    NegocioCategoria negocioCategoria = new NegocioCategoria();
+                    listaCategorias = negocioCategoria.listar();
+                    foreach (Dominio.Categoria categoria in listaCategorias)
+                    {
+                        if (ddlCriterioo.SelectedItem.ToString() == categoria.Descripcion)
+                        {
+                            List<Articulo> lista = (List<Articulo>)Session["listaArticulos"];
+                            List<Articulo> listaFiltrada = lista.FindAll(x => x.IdMarca == categoria.Id);
+                            listaArticulos = listaFiltrada;
+                        }
+                    }
+                }
+                ddlCriterioo.Items.Clear();
+            }
+            catch (Exception ex)
+            {
+
+                Session.Add("Error", ex);
             }
         }
     }
