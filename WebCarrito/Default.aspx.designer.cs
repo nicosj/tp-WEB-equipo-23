@@ -42,22 +42,31 @@ namespace WebCarrito
         protected global::System.Web.UI.WebControls.Label ddlCampo;
 
         /// <summary>
+        /// ddlCampoo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlCampoo;
+
+        /// <summary>
         /// ddlCriterio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCriterio;
+        protected global::System.Web.UI.WebControls.Label ddlCriterio;
 
         /// <summary>
-        /// txtFiltroAvanzado control.
+        /// ddlCriterioo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFiltroAvanzado;
+        protected global::System.Web.UI.WebControls.DropDownList ddlCriterioo;
 
         /// <summary>
         /// btnBuscar control.
