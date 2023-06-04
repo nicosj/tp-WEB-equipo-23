@@ -92,5 +92,32 @@
 			</div>
 		</div>
 	</div>
+	<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark">
+
+		<div class="carousel-inner">
+
+
+			<%foreach (Dominio.Imagen imagen in listaImagen)
+				{
+					if (Int32.Parse(alt) == imagen.IdArticulo)
+					{%>
+
+
+
+			<div class="carousel-item active">
+				<img onerror="this.src='https://image.spreadshirtmedia.net/image-server/v1/compositions/T6A1PA5835PT17X29Y62D162120215W24929H23114/views/1,width=550,height=550,appearanceId=1,backgroundColor=FFFFFF,noPt=true/dead-link-shirt-mens-t-shirt.jpg'" src="<% =imagen.ImagenUrl %>" class="d-block w-30%" alt="...">
+			</div>
+			<%}%>
+			<%}%>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="false"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="false"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
 	<a href="Default.aspx">⏪ Seguir explorando Artículos</a>
 </asp:Content>
