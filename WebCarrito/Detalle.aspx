@@ -2,7 +2,16 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 	<%--TODO: Meter Descripcion, precio, nombre, marca, etc--%>
-
+	<div class="container">
+		<div class="row">
+			<div class="card">
+				<div class="card-header">
+					<h1> <%: articulo.Nombre %> </h1>
+				</div>
+			</div>
+			<asp:Button runat="server" OnClick="btnAddCarro_Click" Text="Agregar al Carro" />
+		</div>
+	</div>
 	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
 			<%

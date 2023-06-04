@@ -46,7 +46,7 @@ namespace negocio
                     throw ex;
                 }
 
-            }
+		}
 
 
 		public List<Articulo> listar()
@@ -89,9 +89,9 @@ namespace negocio
 		{
 			try
 			{
-                DB db = new DB();
-                db.setearConsulta("SELECT TOP 1 Id FROM ARTICULOS ORDER BY Id DESC");
-                db.ejecutarLectura();
+				DB db = new DB();
+				db.setearConsulta("SELECT TOP 1 Id FROM ARTICULOS ORDER BY Id DESC");
+				db.ejecutarLectura();
 				if (db.Lector.Read())
 				{
 					return db.Lector.GetInt32(0);
@@ -102,7 +102,7 @@ namespace negocio
 					return 0;
 				}
 
-            }
+			}
 			catch (Exception)
 			{
 

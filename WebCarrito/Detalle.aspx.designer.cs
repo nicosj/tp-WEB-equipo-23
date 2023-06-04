@@ -11,7 +11,21 @@ namespace WebCarrito
 {
 
 
-	public partial class Detalle
-	{
-	}
+    public partial class Detalle
+    {
+
+        /// <summary>
+        /// Master property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new WebCarrito.SiteMaster Master
+        {
+            get
+            {
+                return ((WebCarrito.SiteMaster)(base.Master));
+            }
+        }
+    }
 }

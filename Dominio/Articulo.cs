@@ -13,6 +13,7 @@ namespace Dominio
         public String Codigo { get; set; }
         public String Nombre { get; set; }
         public String Descripcion { get; set; }
+        public int cantidad { get; set; }
 
 
         [DisplayName("Categoria")]

@@ -8,8 +8,26 @@ using Dominio;
 
 namespace WebCarrito
 {
+    
     public partial class VerCarrito : Page
     {
-       
+        public CarritoCompra carrito;
+        public List<Articulo> listaCarrito { get; set; }
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                carrito = (CarritoCompra)Session["carrito"];
+                MostrarCarro();
+            }
+        }
+
+        private void MostrarCarro()
+        {
+            /*gvCart.DataSource = carrito.GetItems();
+            gvCart.DataBind();*/
+            
+        }
+        
     }
 }
