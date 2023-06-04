@@ -92,7 +92,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark">
+	<div id="carouselExampleAutoplaying" class="carousel slide col-md-5" data-bs-ride="carousel" data-bs-theme="dark">
 
 		<div class="carousel-inner">
 
@@ -110,11 +110,11 @@
 			<%}%>
 			<%}%>
 		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+		<button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="false"></span>
 			<span class="visually-hidden">Previous</span>
 		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+		<button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="false"></span>
 			<span class="visually-hidden">Next</span>
 		</button>

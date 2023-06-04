@@ -101,10 +101,11 @@ namespace WebCarrito
                             List<Articulo> lista = (List<Articulo>)Session["listaArticulos"];
                             List<Articulo> listaFiltrada = lista.FindAll(x => x.IdMarca == marca.Id);
                             listaArticulos = listaFiltrada;
+                            List<Imagen> listaIMG = (List<Imagen>)Session["listaImagenes"];
                         }
                     }
                 }
-                else
+                else if(ddlCampoo.SelectedItem.ToString() == "Categoria")
                 {
                     NegocioCategoria negocioCategoria = new NegocioCategoria();
                     listaCategorias = negocioCategoria.listar();
@@ -113,16 +114,19 @@ namespace WebCarrito
                         if (ddlCriterioo.SelectedItem.ToString() == categoria.Descripcion)
                         {
                             List<Articulo> lista = (List<Articulo>)Session["listaArticulos"];
-                            List<Articulo> listaFiltrada = lista.FindAll(x => x.IdMarca == categoria.Id);
+                            List<Articulo> listaFiltrada = lista.FindAll(x => x.IdCategoria == categoria.Id);
                             listaArticulos = listaFiltrada;
+                            List<Imagen> listaIMG = (List<Imagen>)Session["listaImagenes"];
                         }
                     }
                 }
-                ddlCriterioo.Items.Clear();
+                else
+                {
+
+                }
             }
             catch (Exception ex)
             {
-
                 Session.Add("Error", ex);
             }
         }
