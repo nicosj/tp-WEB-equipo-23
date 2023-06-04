@@ -19,3 +19,12 @@ textarea {
         padding: 0;
     }
 }
+.card-title{
+    
+    position: relative;
+    border: 1px solid orange;
+    border-radius: 25px;
+    top: -20px;
+    color: red;
+    background-color: red;
+}
