@@ -4,15 +4,6 @@ C:\Users\Pia\RiderProjects\Catalogo\Dominio\obj\Debug\Dominio.csproj.AssemblyRef
 C:\Users\Pia\RiderProjects\Catalogo\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Pia\RiderProjects\Catalogo\Dominio\obj\Debug\Dominio.dll
 C:\Users\Pia\RiderProjects\Catalogo\Dominio\obj\Debug\Dominio.pdb
-C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\bin\Debug\Dominio.dll
-C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\bin\Debug\Dominio.pdb
-C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
-C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
-C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.dll
-C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.pdb
-C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\bin\Debug\ConexionDB.dll
-C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\bin\Debug\ConexionDB.pdb
-C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.csproj.CopyComplete
 D:\Github\Dominio\bin\Debug\Dominio.dll
 D:\Github\Dominio\bin\Debug\Dominio.pdb
 D:\Github\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
@@ -31,3 +22,12 @@ D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-e
 D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\Dominio\obj\Debug\Dominio.csproj.CopyComplete
 D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\Dominio\obj\Debug\Dominio.dll
 D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\bin\Debug\Dominio.dll
+C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\bin\Debug\ConexionDB.dll
+C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\bin\Debug\ConexionDB.pdb
+C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.csproj.CopyComplete
+C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.dll
+C:\Users\Pia\RiderProjects\CarritoWeb\Dominio\obj\Debug\Dominio.pdb

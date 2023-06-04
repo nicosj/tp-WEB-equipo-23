@@ -4,12 +4,6 @@ C:\Users\Pia\RiderProjects\Catalogo\ConexionDB\obj\Debug\ConexionDB.csproj.Assem
 C:\Users\Pia\RiderProjects\Catalogo\ConexionDB\obj\Debug\ConexionDB.csproj.CoreCompileInputs.cache
 C:\Users\Pia\RiderProjects\Catalogo\ConexionDB\obj\Debug\ConexionDB.dll
 C:\Users\Pia\RiderProjects\Catalogo\ConexionDB\obj\Debug\ConexionDB.pdb
-C:\Users\Pia\RiderProjects\CarritoWeb\ConexionDB\bin\Debug\ConexionDB.dll
-C:\Users\Pia\RiderProjects\CarritoWeb\ConexionDB\bin\Debug\ConexionDB.pdb
-C:\Users\Pia\RiderProjects\CarritoWeb\ConexionDB\obj\Debug\ConexionDB.csproj.AssemblyReference.cache
-C:\Users\Pia\RiderProjects\CarritoWeb\ConexionDB\obj\Debug\ConexionDB.csproj.CoreCompileInputs.cache
-C:\Users\Pia\RiderProjects\CarritoWeb\ConexionDB\obj\Debug\ConexionDB.dll
-C:\Users\Pia\RiderProjects\CarritoWeb\ConexionDB\obj\Debug\ConexionDB.pdb
 D:\Github\ConexionDB\bin\Debug\ConexionDB.dll
 D:\Github\ConexionDB\bin\Debug\ConexionDB.pdb
 D:\Github\ConexionDB\obj\Debug\ConexionDB.csproj.AssemblyReference.cache
@@ -22,3 +16,9 @@ D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-e
 D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\ConexionDB\obj\Debug\ConexionDB.csproj.CoreCompileInputs.cache
 D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\ConexionDB\obj\Debug\ConexionDB.dll
 D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\ConexionDB\obj\Debug\ConexionDB.pdb
+C:\Users\Pia\RiderProjects\CarritoWeb\ConexionDB\bin\Debug\ConexionDB.dll
+C:\Users\Pia\RiderProjects\CarritoWeb\ConexionDB\bin\Debug\ConexionDB.pdb
+C:\Users\Pia\RiderProjects\CarritoWeb\ConexionDB\obj\Debug\ConexionDB.csproj.AssemblyReference.cache
+C:\Users\Pia\RiderProjects\CarritoWeb\ConexionDB\obj\Debug\ConexionDB.csproj.CoreCompileInputs.cache
+C:\Users\Pia\RiderProjects\CarritoWeb\ConexionDB\obj\Debug\ConexionDB.dll
+C:\Users\Pia\RiderProjects\CarritoWeb\ConexionDB\obj\Debug\ConexionDB.pdb

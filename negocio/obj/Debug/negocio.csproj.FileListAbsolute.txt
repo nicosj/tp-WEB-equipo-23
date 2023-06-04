@@ -9,17 +9,6 @@ C:\Users\Pia\RiderProjects\Catalogo\negocio\obj\Debug\negocio.dll
 C:\Users\Pia\RiderProjects\Catalogo\negocio\obj\Debug\negocio.pdb
 C:\Users\Pia\RiderProjects\Catalogo\negocio\bin\Debug\ConexionDB.dll
 C:\Users\Pia\RiderProjects\Catalogo\negocio\bin\Debug\ConexionDB.pdb
-C:\Users\Pia\RiderProjects\CarritoWeb\negocio\bin\Debug\negocio.dll
-C:\Users\Pia\RiderProjects\CarritoWeb\negocio\bin\Debug\negocio.pdb
-C:\Users\Pia\RiderProjects\CarritoWeb\negocio\bin\Debug\ConexionDB.dll
-C:\Users\Pia\RiderProjects\CarritoWeb\negocio\bin\Debug\Dominio.dll
-C:\Users\Pia\RiderProjects\CarritoWeb\negocio\bin\Debug\ConexionDB.pdb
-C:\Users\Pia\RiderProjects\CarritoWeb\negocio\bin\Debug\Dominio.pdb
-C:\Users\Pia\RiderProjects\CarritoWeb\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
-C:\Users\Pia\RiderProjects\CarritoWeb\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
-C:\Users\Pia\RiderProjects\CarritoWeb\negocio\obj\Debug\negocio.csproj.CopyComplete
-C:\Users\Pia\RiderProjects\CarritoWeb\negocio\obj\Debug\negocio.dll
-C:\Users\Pia\RiderProjects\CarritoWeb\negocio\obj\Debug\negocio.pdb
 D:\Github\negocio\bin\Debug\negocio.dll
 D:\Github\negocio\bin\Debug\negocio.pdb
 D:\Github\negocio\bin\Debug\ConexionDB.dll
@@ -42,3 +31,14 @@ D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-e
 D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\negocio\obj\Debug\negocio.csproj.CopyComplete
 D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\negocio\obj\Debug\negocio.dll
 D:\ONEDRIVE\OneDrive - frgp.utn.edu.ar\TERCER CUATRIMESTRE\PRG 3\TP WEB\tp-WEB-equipo-23\negocio\obj\Debug\negocio.pdb
+C:\Users\Pia\RiderProjects\CarritoWeb\negocio\bin\Debug\negocio.dll
+C:\Users\Pia\RiderProjects\CarritoWeb\negocio\bin\Debug\negocio.pdb
+C:\Users\Pia\RiderProjects\CarritoWeb\negocio\bin\Debug\ConexionDB.dll
+C:\Users\Pia\RiderProjects\CarritoWeb\negocio\bin\Debug\Dominio.dll
+C:\Users\Pia\RiderProjects\CarritoWeb\negocio\bin\Debug\ConexionDB.pdb
+C:\Users\Pia\RiderProjects\CarritoWeb\negocio\bin\Debug\Dominio.pdb
+C:\Users\Pia\RiderProjects\CarritoWeb\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\Pia\RiderProjects\CarritoWeb\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\Pia\RiderProjects\CarritoWeb\negocio\obj\Debug\negocio.csproj.CopyComplete
+C:\Users\Pia\RiderProjects\CarritoWeb\negocio\obj\Debug\negocio.dll
+C:\Users\Pia\RiderProjects\CarritoWeb\negocio\obj\Debug\negocio.pdb
