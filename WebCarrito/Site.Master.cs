@@ -14,11 +14,10 @@ namespace WebCarrito
         public List<Articulo> listaCarrito { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
+            
                 carrito = (CarritoCompra)Session["carrito"];
              
-            }
+            
 
         }
     }

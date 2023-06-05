@@ -9,7 +9,7 @@
 					<h1> <%: articulo.Nombre %> </h1>
 				</div>
 			</div>
-			<asp:Button runat="server" OnClick="btnAddCarro_Click" Text="Agregar al Carro" />
+			<asp:Button runat="server" OnClick="btnAddCarro_Click" Text="Agregar al Carro" OnClientClick="retrun false" />
 		</div>
 	</div>
 	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">

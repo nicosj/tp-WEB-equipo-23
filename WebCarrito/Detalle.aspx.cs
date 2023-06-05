@@ -16,6 +16,7 @@ namespace WebCarrito
 		public  List<Imagen> listaImagen { get; set; }
 		public Articulo articulo { get; set; }
 		public string alt  { get; set; }
+		
 		protected void Page_Load(object sender, EventArgs e)
 		{
 			/*int id_Seleccionado = Int32.Parse(Request.QueryString["id_seleccionado"]);*/
