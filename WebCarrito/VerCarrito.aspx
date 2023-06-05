@@ -5,10 +5,13 @@
         
     
         <h1>Shopping Cart</h1>
-        <% foreach ( Dominio.Articulo cart in carrito.GetItems() )
+        
+        <% if (carrito != null)
            {
-        // genera tebale htmml carrito 
-               
+               foreach (Dominio.Articulo cart in carrito.GetItems())
+               {
+                   // genera tebale htmml carrito 
+
         %>
             <%--genera carrito de compra--%>
             <div class="row">
@@ -38,7 +41,18 @@
             </div>
             
                   
-              <% } %>
+              <% }
+           }
+           else
+           {%>
+            <div class="container">
+                <div class="row text-center">
+                       <div class="col m-5 text-center">
+                            <h1>Nada para Mostrar</h1>
+                       </div>
+                </div>
+            </div>
+           <%} %>
         <a href="Default.aspx">< Back to Products</a>
         <br />
         <br />

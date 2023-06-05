@@ -42,8 +42,6 @@ namespace WebCarrito
 				Session["carrito"] = carrito;
 			}
 			carrito = (CarritoCompra)Session["carrito"];
-			Console.WriteLine("+++++++++"+articulo.Nombre);
-	        
 			carrito.AgregarItem(articulo);
 	       
 			

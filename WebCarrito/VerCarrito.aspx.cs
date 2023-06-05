@@ -20,6 +20,15 @@ namespace WebCarrito
                 carrito = (CarritoCompra)Session["carrito"];
                 MostrarCarro();
             }
+            if(carrito == null)
+            {
+             
+             
+            }
+            else
+            {
+                
+            }
         }
 
         private void MostrarCarro()
@@ -28,6 +37,5 @@ namespace WebCarrito
             gvCart.DataBind();*/
             
         }
-        
     }
 }

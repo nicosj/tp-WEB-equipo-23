@@ -36,8 +36,11 @@ namespace Dominio
 			{
 				// buscar si existe el item en la lista
 				
-				if(!Item.Exists(x => x.Id == art.Id))
+				if(!Item.Exists(x => x.Id == art.Id)){
+					item.cantidad = 1;
 					Item.Add(item);
+					
+				}
 				else
 				{  int index = Item.FindIndex(x => x.Id == art.Id);
 					Item[index].cantidad++;
