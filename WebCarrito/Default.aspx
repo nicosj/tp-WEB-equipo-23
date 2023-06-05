@@ -115,17 +115,15 @@
 						<p class="card-text">$<%:((float)articulo.Precio) %></p>
 
 
-						<a href="Detalle.aspx?id_seleccionado=<%=articulo.Id%>" class="btn btn-warning">Ver Detalle</a>
+				
 						
 
-						<%--<a href="Detalle.aspx?id_seleccionado=<%=articulo.Id%>" class="btn btn-primary">Ver Detalle</a>--%>
+
 					</div>
 					<div class="card-body">
-						<a href="DetalleProducto.aspx?id_seleccionado=<%=articulo.Id%>" class="btn btn-primary">Ver Detalle2</a>
-
-						<%--<asp:Button ID="btnGoDetails" runat="server" OnClick="btnGoDetails_Click"	 Text="DetailsNuevo" />--%>
-
-						<a class="btn btn-primary" href="carrito.aspx?id=<% = articulo.Id %>"><i class="fas fa-shopping-cart"></i></a>
+						<a  href="DetalleProducto.aspx?id_seleccionado=<%=articulo.Id%>" class="btn btn-warning"><i class="fas fa-eye"></i>Ver Detalle</a>
+						
+						<%--<a class="btn btn-primary" href="carrito.aspx?id=<% = articulo.Id %>"><i class="fas fa-shopping-cart"></i></a>--%>
 
 
 

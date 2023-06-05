@@ -7,7 +7,26 @@
         <h1>Shopping Cart</h1>
         
         <% if (carrito != null)
-           {
+           { %>
+            <div class="row">
+                <div class="col-md-2">
+                <i class="fa fa-cart"></i>                
+                </div>
+                <div class="col-md-2">
+                <h2>Nombre</h2>    
+                </div>
+                <div class="col-md-2">
+                                    <h2>PU</h2>
+                                </div>
+                <div class="col-md-2">
+                    <h2>Cantidad</h2>
+                </div>
+                <div class="col-md-2">
+                 <h2>Total</h2>
+                 </div>
+                </div>
+            <%
+               
                foreach (Dominio.Articulo cart in carrito.GetItems())
                {
                    // genera tebale htmml carrito 
@@ -18,8 +37,10 @@
                 <div class="col-md-2">
                     <img src="Images/" alt="" class="img-responsive" />
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <h4><%= cart.Nombre %></h4>
+                </div>
+                <div class="col-md-2">
                     <h4><%= cart.Precio.ToString("c") %></h4>
                 </div>
                 <div class="col-md-2">
@@ -39,10 +60,17 @@
                     <%--<asp:Button runat="server" ID="btnRemove" Text="Remove" OnClick="btnRemove_Click" />--%>
                 </div>
             </div>
-            
+           
                   
               <% }
-           }
+               %>
+             <div class="row">
+                            <div class="col-md-8"></div>
+                            <div class="col-md-2">
+                                <h4>Total:<%=(carrito.TotalCarrito).ToString("c")%></h4>
+                            </div>
+                        </div>
+          <% }
            else
            {%>
             <div class="container">
