@@ -5,10 +5,11 @@
 	<br />
 	<div class="card mb-3" style="max-width: 540px;">
 		<div class="row g-0">
-			<%try
+			<%
+				try
 				{
 					bool primeraImagen = false;
-					if (Int32.Parse(alt) != 999)
+					if (alt!=null)
 					{
 
 						foreach (Dominio.Imagen imagen in listaImagen)
@@ -42,34 +43,29 @@
 					<%
 						try
 						{
-							if (Int32.Parse(alt) != 999)
-							{
-								foreach (Dominio.Articulo articulo2 in listaArticulos)
-								{
-									if (Int32.Parse(alt) == articulo2.Id)
-
-									{%>
-
-										<h5 class="card-title"><%:articulo2.Nombre %></h5>
-										<p class="card-text">Descripción: <%:articulo2.Descripcion %></p>
-										<p class="card-text">Precio (ARS): $ <%:((float)articulo2.Precio) %> .-</p>
-
+							if (alt != null)
+							{%>
+								
+										<h5 class="card-title"><%:articulo.Nombre %></h5>
+										<p class="card-text">Descripción: <%:articulo.Descripcion %></p>
+										<p class="card-text">Precio (ARS): $ <%:((float)articulo.Precio) %> .-</p>
+						
 										
 										<%foreach (Dominio.Categoria categoria in listaCategorias)
 										{
-											if (categoria.Id == articulo2.IdCategoria)
+											if (categoria.Id == articulo.IdCategoria)
 											{ %>
 												<p class="card-text"><small class="text-body-secondary">Categoria: <%:categoria.Descripcion %></small></p>
 										<% } %>
 									<%} %>
 										<%foreach (Dominio.Marca marca in listaMarcas)
 										{
-											if (marca.Id == articulo2.IdMarca)
+											if (marca.Id == articulo.IdMarca)
 											{ %>
 												<p class="card-text"><small class="text-body-secondary">Marca: <%:marca.Descripcion %></small></p>
 										<% } %>
 									<%} %>
-
+									<p><asp:Button runat="server" OnClick="btnAddCarro_Click" Text="Agregar al Carro" /></p>
 
 
 
@@ -79,8 +75,7 @@
 
 
 											}
-										}
-									}
+									
 							}
 						
 						catch (Exception e)
@@ -119,5 +114,6 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
+	
 	<a href="Default.aspx">⏪ Seguir explorando Artículos</a>
 </asp:Content>

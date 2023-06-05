@@ -1,7 +1,7 @@
 <%@ Page Title="Title" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="VerCarrito.aspx.cs" Inherits="WebCarrito.VerCarrito" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
-    <div>
+    <div class="h-100">
         
     
         <h1>Shopping Cart</h1>
@@ -49,6 +49,7 @@
                 <div class="row text-center">
                        <div class="col m-5 text-center">
                             <h1>Nada para Mostrar</h1>
+                           <img src="https://i.pinimg.com/originals/6b/22/98/6b2298fec93ad8240f87c8228ab87969.jpg" class="img-fluid" alt="">
                        </div>
                 </div>
             </div>

@@ -2,14 +2,14 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 	<%--TODO: Meter Descripcion, precio, nombre, marca, etc--%>
-	<div class="container">
+	<div class="container h-100">
 		<div class="row">
 			<div class="card">
 				<div class="card-header">
 					<h1> <%: articulo.Nombre %> </h1>
 				</div>
 			</div>
-			<asp:Button runat="server" OnClick="btnAddCarro_Click" Text="Agregar al Carro" OnClientClick="retrun false" />
+			
 		</div>
 	</div>
 	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -17,7 +17,7 @@
 			<%
 				try
 				{
-					if (Int32.Parse(alt) != 999)
+					if (alt!=null)
 					{
 						foreach (Dominio.Imagen imagen in listaImagen)
 						{
@@ -48,7 +48,7 @@
 			</button>
 		</div>
 	</div>
-
+	<asp:Button runat="server" OnClick="btnAddCarro_Click" Text="Agregar al Carro" />
 	<br />
 	<%
 		}

@@ -97,7 +97,7 @@
                                  else
                                  {  
                          %>
-                                    <h1>hola</h1> 
+                             <li class="text-center">       <h4>   🥴 🛒 </h4></li> 
                                 <% } %>
                               <li><hr class="dropdown-divider"></li>
                               <li class="text-center"><a class="dropdown-item " runat="server" href="~/VerCarrito.aspx">Ver Carrito</a></li>

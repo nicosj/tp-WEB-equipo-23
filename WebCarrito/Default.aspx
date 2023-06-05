@@ -125,7 +125,7 @@
 
 						<%--<asp:Button ID="btnGoDetails" runat="server" OnClick="btnGoDetails_Click"	 Text="DetailsNuevo" />--%>
 
-						<a class="btn btn-primary" href="carrito.aspx?id=<% = articulo.Id %>&e=t"><i class="fas fa-shopping-cart"></i></a>
+						<a class="btn btn-primary" href="carrito.aspx?id=<% = articulo.Id %>"><i class="fas fa-shopping-cart"></i></a>
 
 
 

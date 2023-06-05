@@ -11,6 +11,8 @@ namespace WebCarrito
 {
 	public partial class DetalleProducto : System.Web.UI.Page
 	{
+		CarritoCompra carrito;
+		public List<CarritoCompra> listaCarrito { get; set; }
 		public List<Imagen> listaImagen { get; set; }
 		public List<Articulo> listaArticulos { get; set; }
 		public Articulo articulo { get; set; }
@@ -25,9 +27,11 @@ namespace WebCarrito
 		{
 			/*int id_Seleccionado = Int32.Parse(Request.QueryString["id_seleccionado"]);*/
 			alt = Request.QueryString["id_seleccionado"].ToString();
-
-
+			
 			NegocioArticulo negocio = new NegocioArticulo();
+			articulo = negocio.buscarXId(Int32.Parse(alt));			
+
+			
 			NegocioImagen Imagen = new NegocioImagen();
 			listaArticulos = negocio.listarConSP();
 			listaImagen = Imagen.listar();
@@ -36,9 +40,21 @@ namespace WebCarrito
 			listaCategorias = negocioCategoria.listar();
 			NegocioMarca negocioMarca = new NegocioMarca();
 			listaMarcas = negocioMarca.listar();
-			/*articulo = negocio.buscarXId(id_Seleccionado);*/
+			
 
 
+		}
+		protected void btnAddCarro_Click(object sender, EventArgs e)
+		{
+			if(Session["carrito"] == null)
+			{ 
+				carrito = new CarritoCompra();
+				Session["carrito"] = carrito;
+			}
+			carrito = (CarritoCompra)Session["carrito"];
+			carrito.AgregarItem(articulo);
+	       
+			
 		}
 	}
 }
