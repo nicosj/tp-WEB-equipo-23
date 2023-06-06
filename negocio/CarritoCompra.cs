@@ -54,19 +54,27 @@ namespace Dominio
 			Item.RemoveAll(x => x.Id == id);
 		}
 		
-		public void Actualizaritem(int id,int cantidad)
+		public void Incrementaritem(int id)
 		{
-			if (cantidad > 0)
+            int index = Item.FindIndex(x => x.Id == id);
+            Item[index].cantidad++;
+
+        }
+
+        public void Decrementaritem(int id)
+        {
+            int index = Item.FindIndex(x => x.Id == id);
+			if (Item[index].cantidad > 0)
 			{
-				Item[id].cantidad = cantidad;
-			}
+                Item[index].cantidad--;
+            }
 			else
 			{
-				EliminarItem(id);
+				EliminarItem (index);
 			}
-		}
+        }
 
-		public decimal TotalCarrito
+        public decimal TotalCarrito
 		{
 			get
 			{
