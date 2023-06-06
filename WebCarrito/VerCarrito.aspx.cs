@@ -15,6 +15,9 @@ namespace WebCarrito
 	{
 		protected CarritoCompra carrito;
 		public Button btn;
+		public Button btnMas;
+		public Button btnMenos;
+
 		public List<Articulo> listaCarrito { get; set; }
 		protected void Page_Load(object sender, EventArgs e)
 		{
@@ -34,19 +37,27 @@ namespace WebCarrito
 					btn.CommandArgument = item.Id.ToString();
 					btn.CssClass = "btn btn-danger btn-xs btnOcultoVer";
 					adaptador.Controls.Add(btn);
-					index++;
+
+                    btnMas = new Button();
+                    btnMas.Text = "+";
+                    btnMas.ID = "flotante_Suma" + index;
+                    btnMas.Click += new EventHandler(btnSumar);
+                    btnMas.CommandArgument = item.Id.ToString();
+                    btnMas.CssClass = "btn btn-info btn-xs ";
+                    adaptador.Controls.Add(btnMas);
+
+                    btnMenos = new Button();
+                    btnMenos.Text = "-";
+                    btnMenos.ID = "flotante_Resta" + index;
+                    btnMenos.Click += new EventHandler(btnRestar);
+                    btnMenos.CommandArgument = item.Id.ToString();
+                    btnMenos.CssClass = "btn btn-info btn-xs ";
+                    adaptador.Controls.Add(btnMenos);
+
+                    index++;
 
 
-
-			//< script >
-
-			//	  var contadorElementos = document.getElementsByClassName('btnOcultoVer').length;
-			//		for (var i = 0; i < contadorElementos; i++)
-			//		{
-			//			document.getElementById('btn' + i).appendChild(document.getElementById('btnFlotante' + i))
-
-			//	}
-			//</ script >
+                    
 				}
 			}
 
@@ -66,7 +77,29 @@ namespace WebCarrito
 			}
 		}
 
-		public void btnEliminar(object sender, EventArgs e)
+        public void btnSumar(object sender, EventArgs e)
+        {
+
+            Button btn = (Button)sender;
+            int id = Convert.ToInt32(btn.CommandArgument);
+            carrito = (CarritoCompra)Session["carrito"];
+            carrito.Incrementaritem(id);
+            Session.Add("carrito", carrito);
+
+        }
+
+        public void btnRestar(object sender, EventArgs e)
+        {
+
+            Button btn = (Button)sender;
+            int id = Convert.ToInt32(btn.CommandArgument);
+            carrito = (CarritoCompra)Session["carrito"];
+            carrito.Decrementaritem(id);
+            Session.Add("carrito", carrito);
+
+        }
+
+        public void btnEliminar(object sender, EventArgs e)
 		{
 
 			Button btn = (Button)sender;

@@ -45,22 +45,31 @@
                     <h4><%= cart.Precio.ToString("c") %></h4>
                 </div>
                 <div class="col-md-2">
-                    <%--<asp:TextBox runat="server" ID="txtCantidad" Text="<%= cart.cantidad.ToString() %>" Width="50px" />--%>
-                    <input type="number" id="txtCantidad" onchange=""  value="<%= cart.cantidad.ToString() %>" />
-                    
-                    
+                    <h4><%= cart.cantidad %></h4>
+                <div class="col-md-1">
+                    <div id="btn+<%=contador%>" >
+                    </div>
+                    </div>
+                <div class="col-md-1">
+                    <div id="btn-<%=contador%>" >
+                    </div>
+                    </div>
                 </div>
                 <div class="col-md-2">
                     <%--<asp:TextBox runat="server" ID="txtCantidad" Text="<%= cart.cantidad.ToString() %>" Width="50px" />--%>
                     <h4><%= (cart.cantidad * cart.Precio).ToString("c") %></h4>
                 </div>
                 <div class="col-md-1">
+
                     <%--<asp:Button runat="server" ID="btnUpdate" Text="Update" OnClick="btnUpdate_Click" />--%>
                 </div>
 
                 <div class="col-md-1">
-                   <div id="btn<%=contador++%>" ></div >
-                    
+
+                    <div id="btn<%=contador%>" ></div >
+                
+                 <%contador++;%>
+
                 </div>
             </div>
            
@@ -103,7 +112,9 @@
 	
 		        var contadorElementos=document.getElementsByClassName('btnOcultoVer').length;
              for (var i = 0; i < contadorElementos ; i++){
-					 document.getElementById('btn' + i).appendChild(document.getElementById('MainContent_flotante'+i))
+                 document.getElementById('btn' + i).appendChild(document.getElementById('MainContent_flotante' + i))
+                 document.getElementById('btn+' + i).appendChild(document.getElementById('MainContent_flotante_Suma' + i))
+                 document.getElementById('btn-' + i).appendChild(document.getElementById('MainContent_flotante_Resta' + i))
 			 }
 			</script>
 

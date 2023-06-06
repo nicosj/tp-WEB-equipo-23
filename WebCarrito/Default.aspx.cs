@@ -42,7 +42,7 @@ namespace WebCarrito
                 btn.Click += new EventHandler(btnAddCarro_Click);
                 btn.CommandArgument= item.Id.ToString();
                 btn.CssClass = "btn btn-primary botonHidenPrincipal";
-                heroP.Controls.Add(btn);
+                // heroP.Controls.Add(btn);
                 index++;
 
             }
