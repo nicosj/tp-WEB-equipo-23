@@ -9,9 +9,9 @@
         <% 
            if (carrito != null)
            { %>
-            <div class="row">
+            <div class="row border-1 border-bottom">
                 <div class="col-md-2">
-                <i class="fa fa-cart"></i>                
+                       <h2>Imagen</h2>                 
                 </div>
                 <div class="col-md-2">
                 <h2>Nombre</h2>    
@@ -19,12 +19,15 @@
                 <div class="col-md-2">
                                     <h2>PU</h2>
                                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <h2>Cantidad</h2>
                 </div>
                 <div class="col-md-2">
                  <h2>Total</h2>
                  </div>
+                <div class="col-md-1">
+                                 
+                                 </div>
                 </div>
             <%
                var contador = 0;
@@ -34,9 +37,9 @@
 
         %>
 
-            <div class="row">
+            <div class="row my-2 border-1 border-bottom ">
                 <div class="col-md-2">
-                    <img src="Images/" alt="" class="img-responsive" />
+                    <img src="https://cdn.pixabay.com/photo/2021/09/13/22/02/add-6622547_1280.png" alt="" class="w-50" />
                 </div>
                 <div class="col-md-2">
                     <h4><%= cart.Nombre %></h4>
@@ -45,23 +48,23 @@
                     <h4><%= cart.Precio.ToString("c") %></h4>
                 </div>
                 <div class="col-md-2">
-                    <h4><%= cart.cantidad %></h4>
+                    <h2><%= cart.cantidad %></h2>
+                   
+                </div>
                 <div class="col-md-1">
-                    <div id="btn+<%=contador%>" >
-                    </div>
-                    </div>
-                <div class="col-md-1">
-                    <div id="btn-<%=contador%>" >
-                    </div>
-                    </div>
+                     <div class="col-md-1">
+                                            <div id="btn+<%=contador%>" >
+                                            </div>
+                                            </div>
+                                        <div class="col-md-1">
+                                            <div id="btn-<%=contador%>" >
+                                            </div>
+                                        </div>
+                   
                 </div>
                 <div class="col-md-2">
                     <%--<asp:TextBox runat="server" ID="txtCantidad" Text="<%= cart.cantidad.ToString() %>" Width="50px" />--%>
                     <h4><%= (cart.cantidad * cart.Precio).ToString("c") %></h4>
-                </div>
-                <div class="col-md-1">
-
-                    <%--<asp:Button runat="server" ID="btnUpdate" Text="Update" OnClick="btnUpdate_Click" />--%>
                 </div>
 
                 <div class="col-md-1">
