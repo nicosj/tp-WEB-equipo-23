@@ -18,7 +18,7 @@ namespace WebCarrito
         public Button btn;
         protected List<Button> pivB;
         public int index=0;
-        
+        CarritoCompra carrito;
         public Articulo articulo { get; set; }
         public List<Articulo> listaArticulos { get; set; }
         public List<Categoria> listaCategorias { get; set; }
@@ -26,7 +26,7 @@ namespace WebCarrito
         public List<Imagen> listaImagenes { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            carrito = (CarritoCompra)Session["carrito"];
             FiltroAvanzado = chkAvanzado.Checked;
             NegocioArticulo negocio = new NegocioArticulo();
             NegocioImagen Imagen = new NegocioImagen();
@@ -39,10 +39,10 @@ namespace WebCarrito
                 btn = new Button();
                 btn.Text = "Agregar al carrito";
                 btn.ID = index.ToString();
-                btn.Click += new EventHandler(btnAddCart_Click);
+                btn.Click += new EventHandler(btnAddCarro_Click);
                 btn.CommandArgument= item.Id.ToString();
-                btn.CssClass = "btn btn-primary botonHiden";
-                hero.Controls.Add(btn);
+                btn.CssClass = "btn btn-primary botonHidenPrincipal";
+                heroP.Controls.Add(btn);
                 index++;
 
             }
@@ -151,30 +151,23 @@ namespace WebCarrito
             }
         }
 
-        public void btnAddCart_Click(object sender, EventArgs e)
+        protected void btnAddCarro_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("++++++++++++++++++++++"+ (sender as Button)?.ID);
             
+            if(Session["carrito"] == null)
+            { 
+                carrito = new CarritoCompra();
+                Session["carrito"] = carrito;
+            }
+            carrito = (CarritoCompra)Session["carrito"];
+            carrito.AgregarItem(articulo);
+	       
+			
         }
 
-        /*protected void AddButton(int t)
-        {
-        }*/
+        
 
-        protected void AddButton(string display, int name, Action<object, EventArgs> click)
-        {
-            
-            var b = new Button()
-            {
-                ID= $"Btn_{name}",
-                Text = $"Btn_{name}"+"abc",
-                OnClientClick = "return false;"
-            };
-            
-            b.Click += new EventHandler(click);
-
-            hero.Controls.Add(b);
-        }
+        
         
     }
 }

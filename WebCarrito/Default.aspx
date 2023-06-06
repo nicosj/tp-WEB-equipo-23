@@ -134,12 +134,12 @@
 				
 			</div>
 		</div>
-			 <asp:PlaceHolder ID="hero" runat="server"/>
+			 <asp:PlaceHolder ID="heroP" runat="server"/>
 		</div>
 	
 		<script >
 		
-		var boton=document.getElementsByClassName('botonHiden').length;
+		var boton=document.getElementsByClassName('botonHidenPrincipal').length;
 		
              for (var i = 0; i < boton ; i++){
 				document.getElementById('button'+i).appendChild(document.getElementById('MainContent_'+i))
