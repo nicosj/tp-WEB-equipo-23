@@ -51,12 +51,13 @@
                     <h2><%= cart.cantidad %></h2>
                    
                 </div>
-                <div class="col-md-1">
-                     <div class="majo col-md-1">
-                                            <div id="btn+<%=contador%>" >
+                <div class="majo col-md-1">
+                                            <div class=" col-md-1 m-1">
+                                                <div id="btn+<%=contador%>" >
+                                                </div>
                                             </div>
-                                            </div>
-                                        <div class="col-md-1">
+                                            
+                                        <div class="col-md-1 m-1">
                                             <div id="btn-<%=contador%>" >
                                             </div>
                                         </div>
