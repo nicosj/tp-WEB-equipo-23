@@ -16,9 +16,10 @@ namespace WebCarrito
     public partial class _Default : Page
     {
         public Button btn;
-        protected List<Button> pivB;
+        
         public int index=0;
         CarritoCompra carrito;
+        private List<Articulo> lista;
         public Articulo articulo { get; set; }
         public List<Articulo> listaArticulos { get; set; }
         public List<Categoria> listaCategorias { get; set; }
@@ -27,14 +28,25 @@ namespace WebCarrito
         protected void Page_Load(object sender, EventArgs e)
         {
             carrito = (CarritoCompra)Session["carrito"];
+            
             	
             FiltroAvanzado = chkAvanzado.Checked;
             NegocioArticulo negocio = new NegocioArticulo();
             NegocioImagen Imagen = new NegocioImagen();
-            pivB = new List<Button>();
+            
             listaArticulos = negocio.listarConSP();
             listaImagenes = Imagen.listar();
             
+             lista= (List<Articulo>)Session["listaArticulos"];
+            if(lista!=null)
+            {
+                listaArticulos = lista;
+            }
+            else
+            {
+                Session.Add("listaArticulos", negocio.listarConSP());
+                listaArticulos = negocio.listarConSP();
+            }
             foreach(Articulo item in listaArticulos)
             {  
                 btn = new Button();

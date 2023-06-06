@@ -139,6 +139,7 @@
 	
 		<script >
 		
+		
 		var boton=document.getElementsByClassName('botonHidenPrincipal').length;
 		
              for (var i = 0; i < boton ; i++){
