@@ -20,17 +20,18 @@ namespace WebCarrito
 		{
 
 			int index = 0;
+			carrito = (CarritoCompra)Session["carrito"];
 			if (carrito != null)
 			{
 				foreach (Articulo item in carrito.GetItems())
 				{
-					
+					Console.WriteLine("asdsad");
 					btn = new Button();
 					btn.Text = "x";
-					btn.ID = "btn" + index;
+					btn.ID = "btnx"+index.ToString();
 					btn.Click += new EventHandler(btnEliminar);
 					btn.CommandArgument = item.Id.ToString();
-					btn.CssClass = "btn btn-danger btn-xs btnFlotante";
+					btn.CssClass = "btn btn-danger btn-xs btnOcultoVer";
 					adaptador.Controls.Add(btn);
 					index++;
 

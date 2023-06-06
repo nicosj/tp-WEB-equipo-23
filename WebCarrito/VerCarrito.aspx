@@ -57,7 +57,7 @@
                     <%--<asp:Button runat="server" ID="btnUpdate" Text="Update" OnClick="btnUpdate_Click" />--%>
                 </div>
                 <div class="col-md-2">
-                   <div id="btnFlotante<%=contador++%>" > CUALQUIER VERDURA</div >
+                   <div id="btn<%=contador++%>" > CUALQUIER VERDURA</div >
                 
                     <%--<asp:Button runat="server" ID="btnRemove" Text="Remove" OnClick="btnRemove_Click" />--%>
                 </div>
@@ -83,7 +83,9 @@
                        </div>
                 </div>
             </div>
+            
            <%} %>
+        <asp:PlaceHolder ID="adaptador" runat="server"></asp:PlaceHolder>
         <a href="Default.aspx">< Back to Products</a>
         <br />
         <br />
@@ -104,5 +106,5 @@
 				document.getElementById('btn'+i).appendChild(document.getElementById('btnFlotante'+i))
 			 }
 			</script>
-          <asp:PlaceHolder ID="adaptador" runat="server"></asp:PlaceHolder>
+          
 </asp:Content>

@@ -11,16 +11,30 @@ namespace WebCarrito
 {
 
 
-	public partial class VerCarrito
-	{
+    public partial class VerCarrito
+    {
 
-		/// <summary>
-		/// adaptador control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.PlaceHolder adaptador;
-	}
+        /// <summary>
+        /// adaptador control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder adaptador;
+
+        /// <summary>
+        /// Master property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new WebCarrito.SiteMaster Master
+        {
+            get
+            {
+                return ((WebCarrito.SiteMaster)(base.Master));
+            }
+        }
+    }
 }
