@@ -11,93 +11,79 @@ namespace WebCarrito
 {
 
 
-    public partial class _Default
-    {
+	public partial class _Default
+	{
 
-        /// <summary>
-        /// txtFiltro control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFiltro;
+		/// <summary>
+		/// txtFiltro control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.TextBox txtFiltro;
 
-        /// <summary>
-        /// chkAvanzado control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkAvanzado;
+		/// <summary>
+		/// chkAvanzado control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.CheckBox chkAvanzado;
 
-        /// <summary>
-        /// ddlCampo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ddlCampo;
+		/// <summary>
+		/// ddlCampo control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Label ddlCampo;
 
-        /// <summary>
-        /// ddlCampoo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCampoo;
+		/// <summary>
+		/// ddlCampoo control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.DropDownList ddlCampoo;
 
-        /// <summary>
-        /// ddlCriterio control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ddlCriterio;
+		/// <summary>
+		/// ddlCriterio control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Label ddlCriterio;
 
-        /// <summary>
-        /// ddlCriterioo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCriterioo;
+		/// <summary>
+		/// ddlCriterioo control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.DropDownList ddlCriterioo;
 
-        /// <summary>
-        /// btnBuscar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBuscar;
+		/// <summary>
+		/// btnBuscar control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Button btnBuscar;
 
-        /// <summary>
-        /// hero control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder hero;
-
-        /// <summary>
-        /// Master property.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated property.
-        /// </remarks>
-        public new WebCarrito.SiteMaster Master
-        {
-            get
-            {
-                return ((WebCarrito.SiteMaster)(base.Master));
-            }
-        }
-    }
+		/// <summary>
+		/// hero control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.PlaceHolder hero;
+	}
 }

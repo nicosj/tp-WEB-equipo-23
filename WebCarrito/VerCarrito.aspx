@@ -26,13 +26,13 @@
                  </div>
                 </div>
             <%
-               
+               var contador = 0;
                foreach (Dominio.Articulo cart in carrito.GetItems())
                {
-                   // genera tebale htmml carrito 
+
 
         %>
-            <%--genera carrito de compra--%>
+
             <div class="row">
                 <div class="col-md-2">
                     <img src="Images/" alt="" class="img-responsive" />
@@ -57,6 +57,8 @@
                     <%--<asp:Button runat="server" ID="btnUpdate" Text="Update" OnClick="btnUpdate_Click" />--%>
                 </div>
                 <div class="col-md-2">
+                   <div id="btnFlotante<%=contador++%>" > CUALQUIER VERDURA</div >
+                
                     <%--<asp:Button runat="server" ID="btnRemove" Text="Remove" OnClick="btnRemove_Click" />--%>
                 </div>
             </div>
@@ -88,6 +90,19 @@
         
         <br />
         <%--<asp:Button runat="server" ID="btnUpdateCart" Text="Update Cart" OnClick="btnUpdateCart_Click" />--%>
-    </div>
 
+
+
+
+
+    </div>
+   
+   		<script >
+		
+		        var contadorElementos=document.getElementsByClassName('btnOcultoVer').length;
+             for (var i = 0; i < contadorElementos ; i++){
+				document.getElementById('btn'+i).appendChild(document.getElementById('btnFlotante'+i))
+			 }
+			</script>
+          <asp:PlaceHolder ID="adaptador" runat="server"></asp:PlaceHolder>
 </asp:Content>
