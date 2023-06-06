@@ -6,7 +6,8 @@
     
         <h1>Shopping Cart</h1>
         
-        <% if (carrito != null)
+        <% 
+           if (carrito != null)
            { %>
             <div class="row">
                 <div class="col-md-2">
@@ -53,13 +54,13 @@
                     <%--<asp:TextBox runat="server" ID="txtCantidad" Text="<%= cart.cantidad.ToString() %>" Width="50px" />--%>
                     <h4><%= (cart.cantidad * cart.Precio).ToString("c") %></h4>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-1">
                     <%--<asp:Button runat="server" ID="btnUpdate" Text="Update" OnClick="btnUpdate_Click" />--%>
                 </div>
-                <div class="col-md-2">
-                   <div id="btn<%=contador++%>" > CUALQUIER VERDURA</div >
-                
-                    <%--<asp:Button runat="server" ID="btnRemove" Text="Remove" OnClick="btnRemove_Click" />--%>
+
+                <div class="col-md-1">
+                   <div id="btn<%=contador++%>" ></div >
+                    
                 </div>
             </div>
            
@@ -93,18 +94,17 @@
         <br />
         <%--<asp:Button runat="server" ID="btnUpdateCart" Text="Update Cart" OnClick="btnUpdateCart_Click" />--%>
 
-
-
-
-
     </div>
+   <div>
+
+   </div>
    
    		<script >
-		
+	
 		        var contadorElementos=document.getElementsByClassName('btnOcultoVer').length;
              for (var i = 0; i < contadorElementos ; i++){
-				document.getElementById('btn'+i).appendChild(document.getElementById('btnFlotante'+i))
+					 document.getElementById('btn' + i).appendChild(document.getElementById('MainContent_flotante'+i))
 			 }
 			</script>
-          
+
 </asp:Content>

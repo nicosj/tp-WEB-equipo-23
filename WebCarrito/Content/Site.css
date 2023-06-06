@@ -68,3 +68,8 @@ ul.dropdown-cart li .item-right{
 ul.dropdown-cart li .item-right button{
     margin-top:14px;
 }
+
+.btnOcultoVer, .botonHidenCart{
+    overflow: auto;
+    
+}

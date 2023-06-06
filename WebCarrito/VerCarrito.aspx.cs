@@ -19,6 +19,7 @@ namespace WebCarrito
 		protected void Page_Load(object sender, EventArgs e)
 		{
 
+			carrito = (CarritoCompra)Session["carrito"];
 			int index = 0;
 			carrito = (CarritoCompra)Session["carrito"];
 			if (carrito != null)
@@ -27,8 +28,8 @@ namespace WebCarrito
 				{
 					Console.WriteLine("asdsad");
 					btn = new Button();
-					btn.Text = "x";
-					btn.ID = "btnx"+index.ToString();
+					btn.Text = "X";
+					btn.ID = "flotante" + index;
 					btn.Click += new EventHandler(btnEliminar);
 					btn.CommandArgument = item.Id.ToString();
 					btn.CssClass = "btn btn-danger btn-xs btnOcultoVer";
