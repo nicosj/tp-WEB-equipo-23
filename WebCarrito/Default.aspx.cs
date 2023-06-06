@@ -28,25 +28,30 @@ namespace WebCarrito
         protected void Page_Load(object sender, EventArgs e)
         {
             carrito = (CarritoCompra)Session["carrito"];
-            
-            	
+
+            index = 0;
             FiltroAvanzado = chkAvanzado.Checked;
             NegocioArticulo negocio = new NegocioArticulo();
             NegocioImagen Imagen = new NegocioImagen();
             
-            listaArticulos = negocio.listarConSP();
+            
             listaImagenes = Imagen.listar();
             
-             lista= (List<Articulo>)Session["listaArticulos"];
-            if(lista!=null)
+            lista= (List<Articulo>)Session["listaArticulos"];
+            if(lista==null)
             {
-                listaArticulos = lista;
+                listaArticulos = negocio.listarConSP();
+                
+              
             }
             else
             {
-                Session.Add("listaArticulos", negocio.listarConSP());
-                listaArticulos = negocio.listarConSP();
+                
+                listaArticulos = lista;
+               
             }
+            
+
             foreach(Articulo item in listaArticulos)
             {  
                 btn = new Button();
@@ -59,8 +64,6 @@ namespace WebCarrito
                 index++;
 
             }
-
-            
             
             if (!IsPostBack)
             {

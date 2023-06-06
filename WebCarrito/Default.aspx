@@ -122,8 +122,9 @@
 							<%--<asp:LinkButton runat="server" ID="btnCarrito" OnClick="btnAddCatrrito">+<i class="fas fa-shopping-cart"></i></asp:LinkButton></div>--%>
 						
 							<p class="card-text">$<%:((float)articulo.Precio) %></p>
-							<div id="button<%=contas++%>" ></div>
-							
+							<div class="majo">
+							<div  id="button<%=contas++%>" ></div>
+							</div>
 						
 							</div>
 					<a  href="DetalleProducto.aspx?id_seleccionado=<%=articulo.Id%>" class="btn btn-warning"><i class="fas fa-eye"></i>Ver Detalle</a>

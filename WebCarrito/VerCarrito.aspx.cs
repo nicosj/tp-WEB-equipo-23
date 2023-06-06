@@ -43,7 +43,7 @@ namespace WebCarrito
                     btnMas.ID = "flotante_Suma" + index;
                     btnMas.Click += new EventHandler(btnSumar);
                     btnMas.CommandArgument = item.Id.ToString();
-                    btnMas.CssClass = "btn btn-info btn-xs ";
+                    btnMas.CssClass = "btn btn-info btn-xs btncar ";
                     adaptador.Controls.Add(btnMas);
 
                     btnMenos = new Button();
@@ -51,7 +51,7 @@ namespace WebCarrito
                     btnMenos.ID = "flotante_Resta" + index;
                     btnMenos.Click += new EventHandler(btnRestar);
                     btnMenos.CommandArgument = item.Id.ToString();
-                    btnMenos.CssClass = "btn btn-info btn-xs ";
+                    btnMenos.CssClass = "btn btn-info btn-xs btncar";
                     adaptador.Controls.Add(btnMenos);
 
                     index++;

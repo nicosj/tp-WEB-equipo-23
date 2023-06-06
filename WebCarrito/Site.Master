@@ -87,7 +87,7 @@
                                             <span><%= (cart.cantidad * cart.Precio).ToString("c") %></span>
                                         </span>
                                     </span>
-                                    <span class="item-right">
+                                    <span class="majo item-right">
                                         		<div id="buttonT<%=contas++%>" ></div>
                                         <%--<button class="btn btn-xs btn-danger pull-right">x</button>--%>
                                     </span>

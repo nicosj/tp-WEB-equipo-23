@@ -69,7 +69,24 @@ ul.dropdown-cart li .item-right button{
     margin-top:14px;
 }
 
-.btnOcultoVer, .botonHidenCart{
-    overflow: auto;
-    
+.botonHidenPrincipal, .botonHidenCart, .btnOcultoVer, .btncar{
+    visibility: hidden;
+
 }
+.majo  .botonHidenPrincipal{
+    visibility: visible;
+
+}
+.majo  .botonHidenCart{
+    visibility: visible;
+
+}
+.majo  .btnOcultoVer{
+    visibility: visible;
+
+}
+.majo  .btncar{
+    visibility: visible;
+
+}
+

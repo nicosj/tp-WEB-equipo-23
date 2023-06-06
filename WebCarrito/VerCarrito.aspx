@@ -52,7 +52,7 @@
                    
                 </div>
                 <div class="col-md-1">
-                     <div class="col-md-1">
+                     <div class="majo col-md-1">
                                             <div id="btn+<%=contador%>" >
                                             </div>
                                             </div>
@@ -67,7 +67,7 @@
                     <h4><%= (cart.cantidad * cart.Precio).ToString("c") %></h4>
                 </div>
 
-                <div class="col-md-1">
+                <div class="majo col-md-1">
 
                     <div id="btn<%=contador%>" ></div >
                 
