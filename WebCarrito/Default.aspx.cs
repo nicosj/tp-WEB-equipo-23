@@ -27,6 +27,7 @@ namespace WebCarrito
         protected void Page_Load(object sender, EventArgs e)
         {
             carrito = (CarritoCompra)Session["carrito"];
+            	
             FiltroAvanzado = chkAvanzado.Checked;
             NegocioArticulo negocio = new NegocioArticulo();
             NegocioImagen Imagen = new NegocioImagen();
@@ -37,12 +38,12 @@ namespace WebCarrito
             foreach(Articulo item in listaArticulos)
             {  
                 btn = new Button();
-                btn.Text = "Agregar al carrito";
+                btn.Text = "Agregar al carrito 🛒";
                 btn.ID = index.ToString();
                 btn.Click += new EventHandler(btnAddCarro_Click);
                 btn.CommandArgument= item.Id.ToString();
                 btn.CssClass = "btn btn-primary botonHidenPrincipal";
-                // heroP.Controls.Add(btn);
+                heroP.Controls.Add(btn);
                 index++;
 
             }
@@ -153,6 +154,10 @@ namespace WebCarrito
 
         protected void btnAddCarro_Click(object sender, EventArgs e)
         {
+            NegocioArticulo negocio = new NegocioArticulo();
+            Button btn = (Button)sender;
+            int id = Convert.ToInt32(btn.CommandArgument);
+            articulo = negocio.buscarXId(id);
             
             if(Session["carrito"] == null)
             { 

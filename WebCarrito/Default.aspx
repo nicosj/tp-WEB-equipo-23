@@ -134,7 +134,7 @@
 				
 			</div>
 		</div>
-			 <%-- <asp:PlaceHolder ID="heroP" runat="server"/> --%>
+			  <asp:PlaceHolder ID="heroP" runat="server"/> 
 		</div>
 	
 		<script >
