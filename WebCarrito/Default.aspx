@@ -57,7 +57,9 @@
 		<div class="row ">
 			
             				
-			<%var primer_id = 0;%>
+			<%var primer_id = 0;
+			 var contas = 0;
+			%>
 			<% foreach (Dominio.Articulo articulo in listaArticulos)
 			
 				{%>
@@ -105,40 +107,44 @@
 						</div>
 						
 					</div>
-
-					<div class="card-header bg-white border-top border-warning border-2 ">
-						<h5 class=" card-title  bg-secondary text-warning p-2 shadow"><%:articulo.Nombre %></h5>
-						<p class="card-text "><%:articulo.Descripcion %></p>
-
-						<%--<asp:LinkButton runat="server" ID="btnCarrito" OnClick="btnAddCatrrito">+<i class="fas fa-shopping-cart"></i></asp:LinkButton></div>--%>
-
-						<p class="card-text">$<%:((float)articulo.Precio) %></p>
-
-
-				
+						<div class="card-body">
 						
-
-
-					</div>
-					<div class="card-body">
-						<a  href="DetalleProducto.aspx?id_seleccionado=<%=articulo.Id%>" class="btn btn-warning"><i class="fas fa-eye"></i>Ver Detalle</a>
 						
 						<%--<a class="btn btn-primary" href="carrito.aspx?id=<% = articulo.Id %>"><i class="fas fa-shopping-cart"></i></a>--%>
 
 
 
 					</div>
+						<div class="card-header bg-white border-top border-warning border-2 ">
+							<h5 class=" card-title  bg-secondary text-warning p-2 shadow"><%:articulo.Nombre %></h5>
+							<p class="card-text "><%:articulo.Descripcion %></p>
 
-						</div>
+							<%--<asp:LinkButton runat="server" ID="btnCarrito" OnClick="btnAddCatrrito">+<i class="fas fa-shopping-cart"></i></asp:LinkButton></div>--%>
+						
+							<p class="card-text">$<%:((float)articulo.Precio) %></p>
+							<div id="button<%=contas++%>" ></div>
+							
+						
+							</div>
+					<a  href="DetalleProducto.aspx?id_seleccionado=<%=articulo.Id%>" class="btn btn-warning"><i class="fas fa-eye"></i>Ver Detalle</a>
+					</div>
 
 				</div>
 			<%  }  %>
 				
 			</div>
 		</div>
-
+			 <asp:PlaceHolder ID="hero" runat="server"/>
 		</div>
+	
+		<script >
 		
+		var boton=document.getElementsByClassName('botonHiden').length;
+		
+             for (var i = 0; i < boton ; i++){
+				document.getElementById('button'+i).appendChild(document.getElementById('MainContent_'+i))
+			 }
+            </script>
 </asp:Content>
 
 

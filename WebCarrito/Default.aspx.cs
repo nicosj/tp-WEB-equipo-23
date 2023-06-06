@@ -8,13 +8,17 @@ using negocio;
 
 using Dominio;
 using Microsoft.Ajax.Utilities;
+using EventHandler = System.EventHandler;
 
 namespace WebCarrito
 {
 
     public partial class _Default : Page
     {
-
+        public Button btn;
+        protected List<Button> pivB;
+        public int index=0;
+        
         public Articulo articulo { get; set; }
         public List<Articulo> listaArticulos { get; set; }
         public List<Categoria> listaCategorias { get; set; }
@@ -26,9 +30,25 @@ namespace WebCarrito
             FiltroAvanzado = chkAvanzado.Checked;
             NegocioArticulo negocio = new NegocioArticulo();
             NegocioImagen Imagen = new NegocioImagen();
+            pivB = new List<Button>();
             listaArticulos = negocio.listarConSP();
             listaImagenes = Imagen.listar();
+            
+            foreach(Articulo item in listaArticulos)
+            {  
+                btn = new Button();
+                btn.Text = "Agregar al carrito";
+                btn.ID = index.ToString();
+                btn.Click += new EventHandler(btnAddCart_Click);
+                btn.CommandArgument= item.Id.ToString();
+                btn.CssClass = "btn btn-primary botonHiden";
+                hero.Controls.Add(btn);
+                index++;
 
+            }
+
+            
+            
             if (!IsPostBack)
             {
                 Session.Add("listaArticulos", negocio.listarConSP());
@@ -130,5 +150,31 @@ namespace WebCarrito
                 Session.Add("Error", ex);
             }
         }
+
+        public void btnAddCart_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("++++++++++++++++++++++"+ (sender as Button)?.ID);
+            
+        }
+
+        /*protected void AddButton(int t)
+        {
+        }*/
+
+        protected void AddButton(string display, int name, Action<object, EventArgs> click)
+        {
+            
+            var b = new Button()
+            {
+                ID= $"Btn_{name}",
+                Text = $"Btn_{name}"+"abc",
+                OnClientClick = "return false;"
+            };
+            
+            b.Click += new EventHandler(click);
+
+            hero.Controls.Add(b);
+        }
+        
     }
 }

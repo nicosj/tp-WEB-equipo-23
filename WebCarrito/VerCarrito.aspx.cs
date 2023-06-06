@@ -11,10 +11,12 @@ namespace WebCarrito
     
     public partial class VerCarrito : Page
     {
-        public CarritoCompra carrito;
+        protected CarritoCompra carrito;
+        
         public List<Articulo> listaCarrito { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             if (!IsPostBack)
             {
                 carrito = (CarritoCompra)Session["carrito"];

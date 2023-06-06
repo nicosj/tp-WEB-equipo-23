@@ -71,6 +71,7 @@
                           <ul class="dropdown-menu dropdown-cart" role="menu">
                               <% if (carrito != null)
                                  {
+                                     var contas = 0;
                                      foreach (Dominio.Articulo cart in carrito.GetItems())
                                      {
                                          // genera tebale htmml carrito 
@@ -87,7 +88,8 @@
                                         </span>
                                     </span>
                                     <span class="item-right">
-                                        <button class="btn btn-xs btn-danger pull-right">x</button>
+                                        		<div id="buttonT<%=contas++%>" ></div>
+                                        <%--<button class="btn btn-xs btn-danger pull-right">x</button>--%>
                                     </span>
                                 </span>
                               </li>
@@ -121,11 +123,22 @@
                 <p>&copy; <%: DateTime.Now.Year %> - Fabuloso Equipo N°23</p>
             </footer>
         </div>
+        <asp:PlaceHolder ID="herot" runat="server"/>
     </form>
+    
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/Scripts/bootstrap.js") %>
         <%: Scripts.Render("~/Scripts/jquery-3.4.1.js") %>
     </asp:PlaceHolder>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+<script >
+		
+		var botons=document.getElementsByClassName('botonHidenCart').length;
+		
+             for (var i = 0; i < botons ; i++){
+				document.getElementById('buttonT'+i).appendChild(document.getElementById('T'+i))
+			 }
+            </script>
 </body>
 </html>

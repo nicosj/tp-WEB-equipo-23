@@ -78,6 +78,15 @@ namespace WebCarrito
         protected global::System.Web.UI.WebControls.Button btnBuscar;
 
         /// <summary>
+        /// hero control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder hero;
+
+        /// <summary>
         /// Master property.
         /// </summary>
         /// <remarks>
